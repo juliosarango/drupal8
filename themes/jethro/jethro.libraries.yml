@@ -5,6 +5,7 @@ global-css:
      css/font-awesome.min.css: {}
      css/page.css: {}
      css/main.css: {}
+     css/custom.css: {}
   js:
     js/custom.js: {}
     js/modernizr.custom.js: {}
