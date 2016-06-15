@@ -1,0 +1,48 @@
+diff --git a/integrity.theme b/integrity.theme
+index dcfde92..0f2b7d5 100755
+--- a/integrity.theme
++++ b/integrity.theme
+@@ -80,27 +80,26 @@ function integrity_preprocess_page(&$variables) {
+ function _integrity_get_home_block_contents($sec = '') {
+ 
+   $slider_content = array();
+-  if(theme_get_setting('slideshow_display')) {
++  if (theme_get_setting('slideshow_display')) {
+     for ($i = 1; $i <= SLIDESHOW_COUNT; $i++) {
+ 
+-      $fid = theme_get_setting('slide_image_path_'.$i,'integrity');
++      $fid = theme_get_setting('slide_image_path_' . $i, 'integrity');
+       $file = File::load($fid[0]);
+       if (!empty($file)) {
+         $uri = $file->getFileUri();
+         $path = file_create_url($uri);
+-      }
+-      else {
++      } else {
+ 
+         $path = base_path() . drupal_get_path('theme', 'integrity') . theme_get_setting('slide_image_path_' . $i, 'integrity');
+       }
+ 
+ 
+-     $active_class = $i == 1 ? 'active' : 'in-active';
+-     $slider_content[$i] = '<div class="item ' . $active_class . ' demo-text-goes-top">
++      $active_class = $i == 1 ? 'active' : 'in-active';
++      $slider_content[$i] = '<div class="item ' . $active_class . ' demo-text-goes-top">
+       <div class="content-wrapper">
+         <div class="slide-body blue-container">
+-          <h2>'.wordwrap(theme_get_setting('slide_title_' . $i, 'integrity'), 50, "<br>").'.</h2>
+-          <p>'.wordwrap(theme_get_setting('slide_description_'. $i, 'integrity'), 60, "<br>").'</p>
++          <h2>' . wordwrap(theme_get_setting('slide_title_' . $i, 'integrity'), 50, "<br>") . '.</h2>
++          <p>' . wordwrap(theme_get_setting('slide_description_' . $i, 'integrity'), 60, "<br>") . '</p>
+           <div class="demo-devices">
+             <div class="ipad">
+               <div class="content">
+@@ -111,7 +110,7 @@ function _integrity_get_home_block_contents($sec = '') {
+         </div>
+       </div>
+     </div>';
+-      }
++    }
+   }
+ 
+   $image_list = array();

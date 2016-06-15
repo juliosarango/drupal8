@@ -1,0 +1,95 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'gulp' ]
+2 info using npm@3.8.9
+3 info using node@v6.2.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData gulp@^3.8.9
+8 silly fetchNamedPackageData gulp
+9 silly mapToRegistry name gulp
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'gulp',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'gulp',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/gulp
+14 verbose request uri https://registry.npmjs.org/gulp
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 00:17:44
+17 verbose request id 80da63176167a2ae
+18 verbose etag "E3SZ4YQZ584G2MQ1WJ1FJ5VN9"
+19 http request GET https://registry.npmjs.org/gulp
+20 http 304 https://registry.npmjs.org/gulp
+21 verbose headers { date: 'Fri, 03 Jun 2016 05:17:45 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   etag: '"E3SZ4YQZ584G2MQ1WJ1FJ5VN9"',
+21 verbose headers   age: '119',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-jfk1047-JFK',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '3',
+21 verbose headers   'x-timer': 'S1464931065.123054,VS0,VE0',
+21 verbose headers   vary: 'Accept-Encoding' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Fri, 03 Jun 2016 05:17:45 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     etag: '"E3SZ4YQZ584G2MQ1WJ1FJ5VN9"',
+22 silly get     age: '119',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-jfk1047-JFK',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '3',
+22 silly get     'x-timer': 'S1464931065.123054,VS0,VE0',
+22 silly get     vary: 'Accept-Encoding' } ]
+23 verbose etag https://registry.npmjs.org/gulp from cache
+24 verbose get saving gulp to /home/jsarangoq/.npm/registry.npmjs.org/gulp/.cache.json
+25 verbose correctMkdir /home/jsarangoq/.npm correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly rollbackFailedOptional Starting
+39 silly rollbackFailedOptional Finishing
+40 silly runTopLevelLifecycles Starting
+41 silly runTopLevelLifecycles Finishing
+42 silly install printInstalled
+43 verbose stack Error: Refusing to install gulp as a dependency of itself
+43 verbose stack     at checkSelf (/usr/local/lib/node_modules/npm/lib/install/validate-args.js:53:14)
+43 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+43 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+43 verbose stack     at chain (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+43 verbose stack     at /usr/local/lib/node_modules/npm/lib/install/validate-args.js:16:5
+43 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+43 verbose stack     at Array.forEach (native)
+43 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+43 verbose stack     at Array.forEach (native)
+43 verbose stack     at asyncMap (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+44 verbose cwd /var/www/html/arteycultura/themes/drupal8_zymphonies_theme
+45 error Linux 4.1.13-100.fc21.x86_64
+46 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save-dev" "gulp"
+47 error node v6.2.0
+48 error npm  v3.8.9
+49 error code ENOSELF
+50 error Refusing to install gulp as a dependency of itself
+51 error If you need help, you may report this error at:
+51 error     <https://github.com/npm/npm/issues>
+52 verbose exit [ 1, true ]

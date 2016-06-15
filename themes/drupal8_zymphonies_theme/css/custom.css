@@ -1,0 +1,19 @@
+.social {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: #123156;
+	margin: 0 auto;
+	line-height: 180px;
+}
+
+/*separador*/
+
+.separador {
+	width: 40px;
+	height: 4px;
+	display: block;
+	margin: 0 auto;
+	background-color: #0c243D;
+	margin-bottom: 30px;
+}
