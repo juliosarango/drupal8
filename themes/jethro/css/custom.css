@@ -7,17 +7,6 @@
 	line-height: 180px;
 }
 
-/*separador*/
-
-.separador {
-	width: 40px;
-	height: 4px;
-	display: block;
-	margin: 0 auto;
-	background-color: #0c243D;
-	margin-bottom: 30px;
-}
-
 /*menu*/
 .navbar-default {
 	box-shadow: none;
@@ -41,3 +30,28 @@
 .nav >li >a:hover, .nav > li > a:focus {
 	background-color: transparent;
 }
+
+.banner-principal .titulo-banner{
+	margin-top: 130px;	
+}
+
+.banner-principal .titulo-banner a {
+	color: #ffffff;
+	font-size: 1.5em;
+	background-color: #00;
+}
+
+/*separador*/
+
+
+.banner-principal .separador {	
+	width: 400px;
+	height: 4px;
+	background-color: #ffffff;		
+	display: block;
+	margin: 0 auto;	
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+
